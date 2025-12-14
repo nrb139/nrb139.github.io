@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nolan Bennett Photography</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">NOLAN BENNETT</a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="landscapes.html">Landscapes</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="wildlife.html">Wildlife</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <img src="images/hero.jpg" alt="Picos de Europa" class="hero-image" />
+            <div class="hero-text">
+                <h1>Nolan Bennett Photography</h1>
+                <p>Come see the world through my lens</p>
+            </div>
+        </div>
+
+        <section>
+            <h2>Welcome</h2>
+            <p>
+                Photography is more than just capturing what we see—it's about
+                revealing the extraordinary in the everyday. Through my lens, I
+                explore the beauty of natural landscapes, the geometric magic of
+                architecture, and the raw authenticity of wildlife.
+            </p>
+            <p>
+                Every photograph we take tells a story. Whether it's the golden hour
+                light washing over a mountain range or the weather-worn lines of a
+                medieval building, I strive to capture images that make you pause.
+            </p>
+            <p>
+                Explore my galleries to see the world through my perspective. Each
+                collection represents a different facet of my photographic journey,
+                showcasing the variety of subjects that continue to captivate my
+                attention and inspire me.
+            </p>
+        </section>
+
+        <section>
+            <h2>Featured Collections</h2>
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <a href="landscapes.html">
+                        <img src="images/land1.jpg" alt="Landscape Photography" />
+                    </a>
+                </div>
+                <div class="photo-item">
+                    <a href="architecture.html">
+                        <img src="images/arch1.jpg" alt="Architecture Photography" />
+                    </a>
+                </div>
+                <div class="photo-item">
+                    <a href="wildlife.html">
+                        <img src="images/wild1.jpg" alt="Wildlife Photography" />
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2025 Nolan Bennett |
+            <a href="https://nolanbennett.net" target="_blank">nolanbennett.net</a>
+            | IG
+            <a href="https://instagram.com/nolanryanbennett" target="_blank">@nolanryanbennett</a>
+        </p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            if (navLinks.classList.contains("active")) {
+                navLinks.classList.remove("active");
+            } else {
+                navLinks.classList.add("active");
+            }
+        }
+    </script>
+</body>
+
+</html>
