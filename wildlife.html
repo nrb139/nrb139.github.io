@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wildlife & Nature - Nolan Bennett Photography</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">NOLAN BENNETT</a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="landscapes.html">Landscapes</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="wildlife.html">Wildlife</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Wildlife</h1>
+        <p>
+            Wildlife photography requires patience, timing, and respect for the
+            natural world. These images capture the beauty of the animal kingdom.
+            From swimming koi to intimate portraits of our primate cousins, each
+            photograph tells a story of life in the wild and reminds us of the
+            importance of conservation.
+        </p>
+
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="images/wild1.jpg" alt="Eastern Lowland Gorilla" onclick="openLightbox(this.src, this.alt)" />
+            </div>
+            <div class="photo-item">
+                <img src="images/wild2.jpg" alt="European Herring Gull" onclick="openLightbox(this.src, this.alt)" />
+            </div>
+            <div class="photo-item">
+                <img src="images/wild3.jpg" alt="Rough Green Snake" onclick="openLightbox(this.src, this.alt)" />
+            </div>
+            <div class="photo-item">
+                <img src="images/wild4.jpg" alt="Hispano-Bretón Horses" onclick="openLightbox(this.src, this.alt)" />
+            </div>
+            <div class="photo-item">
+                <img src="images/wild5.jpg" alt="Koi Fish" onclick="openLightbox(this.src, this.alt)" />
+            </div>
+            <div class="photo-item">
+                <img src="images/wild6.jpg" alt="Silver Argiope Spider" onclick="openLightbox(this.src, this.alt)" />
+            </div>
+            <div class="photo-item">
+                <img src="images/wild7.jpg" alt="Domestic Goat" onclick="openLightbox(this.src, this.alt)" />
+            </div>
+            <div class="photo-item">
+                <img src="images/wild8.jpg" alt="African Lion" onclick="openLightbox(this.src, this.alt)" />
+            </div>
+            <div class="photo-item">
+                <img src="images/wild9.jpg" alt="Common Box Turtle" onclick="openLightbox(this.src, this.alt)" />
+            </div>
+        </div>
+
+        <table class="settings-table">
+            <caption>
+                Typical Camera Settings for Wildlife Photography
+            </caption>
+            <thead>
+                <tr>
+                    <th>Setting</th>
+                    <th>Typical Range</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Aperture</td>
+                    <td>f/4 - f/5.6</td>
+                    <td>Wide aperture for subject isolation and fast shutter speeds</td>
+                </tr>
+                <tr>
+                    <td>Shutter Speed</td>
+                    <td>1/500s - 1/2000s</td>
+                    <td>Freeze motion of animals and compensate for long lens shake</td>
+                </tr>
+                <tr>
+                    <td>ISO</td>
+                    <td>400 - 1600</td>
+                    <td>
+                        Higher ISO allows faster shutter speeds in varying light
+                        conditions
+                    </td>
+                </tr>
+                <tr>
+                    <td>Focal Length</td>
+                    <td>200mm - 600mm</td>
+                    <td>
+                        Telephoto lenses for reach and subject isolation from distance
+                    </td>
+                </tr>
+                <tr>
+                    <td>Focus Mode</td>
+                    <td>Continuous AF</td>
+                    <td>
+                        Track moving subjects with continuous autofocus and tracking
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <div id="lightboxOverlay">
+        <button class="lightbox-close-btn" onclick="closeLightbox()">
+            Close
+        </button>
+        <br /><br />
+        <img id="lightboxImg" src="" alt="Expanded image" />
+        <p id="lightboxCaption"></p>
+    </div>
+
+    <footer>
+        <p>
+            &copy; 2025 Nolan Bennett |
+            <a href="https://nolanbennett.net" target="_blank">nolanbennett.net</a>
+            | IG
+            <a href="https://instagram.com/nolanryanbennett" target="_blank">@nolanryanbennett</a>
+        </p>
+    </footer>
+
+    <script src="lightbox.js"></script>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+
+            if (navLinks.classList.contains("active")) {
+                navLinks.classList.remove("active");
+            } else {
+                navLinks.classList.add("active");
+            }
+        }
+    </script>
+</body>
+
+</html>

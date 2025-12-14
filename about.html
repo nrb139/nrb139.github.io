@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Nolan Bennett Photography</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">NOLAN BENNETT</a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="landscapes.html">Landscapes</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="wildlife.html">Wildlife</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="about-content">
+            <h1>About Me</h1>
+
+            <p>
+                I'm Nolan Bennett, a photographer at heart and Penn State student
+                studying Digital Multimedia Design (B.Des.) My journey with
+                photography began as a way to document my travels and experiences, but
+                it quickly evolved into a passionate hobby of capturing the world's
+                beauty through my lens.
+            </p>
+
+            <p>
+                I've captured photos in some incredible locations, from the dramatic
+                landscapes of Spain, to islands in the Caribbean, to the varied
+                landscapes of Ecuador. Everywhere I've travelled has helped me develop
+                a deep appreciation for diverse cultures and natural environments.
+                These experiences have shaped my art and taught me to find
+                extraordinary moments in everyday scenes.
+            </p>
+
+            <h2>My Approach</h2>
+            <p>
+                This site focuses on 3 areas of my photography: landscapes that
+                showcase nature's grandeur, architecture that highlights human
+                creativity, and wildlife that captures authentic moments in nature.
+                Each genre requires different techniques and patience, but they all
+                share a common goal— creating images that resonate with viewers and
+                tell compelling visual stories.
+            </p>
+
+            <h2>Beyond Photography</h2>
+            <p>
+                When I'm not behind the camera, you'll find me hiking, camping, or
+                working on other creative pursuits like calligraphy and crochet. I'm
+                also passionate about mindfulness practices and enjoy exploring how
+                photography can be a meditative practice - learning to be fully
+                present in the moment while creating.
+            </p>
+
+            <h2>Let's Connect</h2>
+            <p>
+                I'm always interested in connecting with fellow photographers,
+                potential clients, and anyone who appreciates visual storytelling. If
+                you're interested in commissioning work, purchasing prints, or simply
+                want to discuss photography techniques, feel free to reach out through
+                my <a href="contact.html">contact page</a>.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2025 Nolan Bennett |
+            <a href="https://nolanbennett.net" target="_blank">nolanbennett.net</a>
+            | IG
+            <a href="https://instagram.com/nolanryanbennett" target="_blank">@nolanryanbennett</a>
+        </p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            if (navLinks.classList.contains("active")) {
+                navLinks.classList.remove("active");
+            } else {
+                navLinks.classList.add("active");
+            }
+        }
+    </script>
+</body>
+
+</html>
